@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>weather</class>
+ <widget class="QWidget" name="weather">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>weather</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>211</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_7">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="typepiclb1">
+          <property name="text">
+           <string>图片</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="wendu">
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+          </property>
+          <property name="text">
+           <string>32</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_33">
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+            </property>
+            <property name="text">
+             <string>℃</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="currweatherlb">
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>天气</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="range_wendu1">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>温度</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typelb1">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>天气</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="windlb1">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>风向</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="aqilb1">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>污染度</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>-180</x>
+     <y>180</y>
+     <width>104</width>
+     <height>87</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>621</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="addr">
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;楷体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>贵阳市</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="datalb">
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Times New Roman&quot;;</string>
+      </property>
+      <property name="text">
+       <string>2022-10-12</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="weeklab">
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;楷体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>星期日</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="timelb">
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Times New Roman&quot;;</string>
+      </property>
+      <property name="text">
+       <string>20:30  </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>贵阳市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>济南市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>石家庄</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>哈尔滨</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>沈阳市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>乌鲁木齐</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>兰州市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>银川市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>郑州市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>杭州市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>南昌市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>南宁市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>长沙市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>昆明市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>拉萨市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>呼和浩特</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>西宁市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>福州市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>北京市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>广州市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>合肥市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>襄阳市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>铜仁市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>上海市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>成都市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>武汉市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>西安市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>北京市</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>海南市</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>200</y>
+     <width>431</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="datalb2">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>月-日</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="range_wendu2">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>温度</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="windlb2">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>风向</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typepiclb2">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>图片</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typelb2">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>天气</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="aqilb2">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>污染度</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="datalb3">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="range_wendu3">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="windlb3">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typepiclb3">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typelb3">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="aqilb3">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="datalb4">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="range_wendu4">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="windlb4">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typepiclb4">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typelb4">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="aqilb4">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="datalb5">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="range_wendu5">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="windlb5">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typepiclb5">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="typelb5">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="aqilb5">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
